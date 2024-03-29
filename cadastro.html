@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="./source/bootstrap/css/bootstrap.css">
+  <script src="./source/bootstrap/js/bootstrap.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="container center-login">
+    <h1 class="mt-5">Cadastro</h1>
+
+    <form class=" grid gap-3 form-login" action="./php/cadastro.php" method="POST">
+      <div class="g-col-6 form-group">
+        <input type="text" class="form-control" name="nome" placeholder="Nome" required>
+      </div>
+      <div class="g-col-6 form-group">
+        <input type="email" class="form-control" name="email" placeholder="Email" required>
+      </div>
+      <div class="g-col-6 form-group">
+        <input type="password" class="form-control" name="senha" placeholder="Senha" required>
+      </div>
+      <div class="g-col-6 form-group">
+        <input type="password" class="form-control" name="confirma_senha" placeholder="Confirme a Senha" required>
+      </div>
+      <div class=" g-col-6 form-group user-select">
+        <select class="form-control " name="tipo_usuario">
+          <option value="0">Usuario</option>
+          <option value="1">Prestador de Servico</option>
+        </select>
+      </div>
+      <button type="submit" class="p-2 g-col-6 btn btn-primary">Cadastrar</button>
+    </form>
+    <a href="./index.html" class="btn btn-secondary">Login</a>
+  </div>
+
+</body>
+
+</html>
